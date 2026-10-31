@@ -1,0 +1,3 @@
+import type { Snapshot,Response } from '../src/types';
+export function snapshot(now=0,level=10):Snapshot {return {receivedAt:now,state:{v:1,type:'state',seq:Math.round(now)+1,uptime_ms:now,lease:{owner:1,you_control:true,remaining_ms:30000,stopping:false},heart:{bpm:80,age_ms:0},machine:{rpm:60,age28_ms:0,reported_level:level,age3f_ms:0,target_level:level,sent_level:level,level_ack_pending:false,level_queued:false,tracking:true,uart_online:true,pulse:'idle',timeouts:0}}};}
+export const response=(cmd='set_resistance'):Response=>({v:1,type:'response',id:1,cmd,ok:true,lease:{owner:1,you_control:true,remaining_ms:30000,stopping:false}});
