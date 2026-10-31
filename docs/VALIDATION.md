@@ -60,3 +60,7 @@ Three.js 獨立分包約 562 KB（gzip 約 139 KB），Vite 會顯示超過預�
 ## 遠端部署狀態
 
 2026-10-31 依專案擁有者要求建立公開程式庫 [root50643/rehab_neon_rider](https://github.com/root50643/rehab_neon_rider)。推送前再次通過 23 項單元測試、型別檢查與正式建置。已提供 GitHub Actions CI 與 Pages workflow，遠端執行結果可在 [GitHub Actions](https://github.com/root50643/rehab_neon_rider/actions) 查看。
+
+首次 Linux CI 的單元測試與建置通過，瀏覽器測試因操作／RPM 顯示等待逾時失敗。CI 使用 SwiftShader 軟體渲染完整 3D 畫面，因此將 CI 單項測試期限設為 120 秒、畫面斷言等待設為 20 秒；本機仍為 45 秒／5 秒。保留全部 9 項瀏覽器測試與原有機台通訊、遙測時效及停止邏輯，不以略過測試或自動重試取得通過結果。
+
+GitHub Pages 遊戲網址：[https://root50643.github.io/rehab_neon_rider/](https://root50643.github.io/rehab_neon_rider/)。每次正式發布結果以 `Deploy GitHub Pages` workflow 為準；軟體驗證不取代上列實機驗收。

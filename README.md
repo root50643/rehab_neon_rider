@@ -1,5 +1,9 @@
 # NEON REHAB RIDER｜星際單車
 
+**[立即遊玩：https://root50643.github.io/rehab_neon_rider/](https://root50643.github.io/rehab_neon_rider/)**
+
+開啟網站後可先按「模擬體驗」遊玩；實機連線請使用支援 Web Bluetooth 的 Chrome／Edge。
+
 踩進另一個宇宙。以飛輪 RPM 驅動第三人稱 3D 單車，從霓虹城市、軌道爬升到星際躍遷，完成五公里虛擬旅程。Web Bluetooth 直接連接 [Rehab ESP32 WebBLE](https://github.com/root50643/rehab_esp32_webble)，可依賽道坡度調整已校正的機台阻力。
 
 這是獨立的靜態網站，不需伺服器、帳號或付費服務。原 ESP32 韌體及測試控制台不受影響。
@@ -82,6 +86,8 @@ pnpm test:browser
 瀏覽器測試包含人工 BLE、模擬玩法、停止／斷線／重連、設定、390／768／1440px 版面，以及正式資源路徑。截圖與失敗 trace 寫入忽略的 `test-results/`。
 
 ## GitHub Pages
+
+本專案的遊戲網址為 **https://root50643.github.io/rehab_neon_rider/**。`main` 更新後，Actions 會先檢查再部署。若要部署自己的 fork，請依下列步驟設定：
 
 1. 在 GitHub 建立自己的 `rehab_neon_rider` repository，將本目錄的內容放在 repository 根目錄，推送到 `main`。
 2. Settings → Pages → Build and deployment → Source 選 **GitHub Actions**。
